@@ -1,0 +1,35 @@
+/* variables */
+$kleur-zwart: #000000;
+$kleur-grijs: rgb(149, 149, 149);
+$white: #FFFBFA;
+
+/* bootstrap override */
+$font-color: $white;
+@font-face {
+  font-family: LemonMilk;
+  src: url(fonts/LEMONMILK-Regular.otf); 
+}
+
+$font-header: LemonMilk, Arial, Helvetica, sans-serif;
+$font-text: LemonMilk, Arial, Helvetica, sans-serif;
+
+$primary: $kleur-zwart;
+$secondary: $kleur-grijs;
+
+$theme-colors: (
+  "primary": $kleur-zwart,
+  "secondary": $kleur-grijs,
+  "danger": #ff4136,
+  "white": #f6c8b1,
+);
+
+$font-family-sans-serif: $font-text;
+$headings-font-family: $font-header;
+$headings-font-weight: 700;
+$header-color: $kleur-zwart;
+$body-color: $white;
+$body-bg: $kleur-grijs;
+
+$h2-font-size: 3.2rem;
+$h3-font-size: 2.5rem;
+$h4-font-size: 2rem;

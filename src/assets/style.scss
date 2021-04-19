@@ -1,0 +1,78 @@
+@import 'vars';
+@import 'bootstrap';
+
+h2 {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.heavy {
+  font-weight: 700;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+body {
+  // linear-gradient : (160deg, #903921, #C8611A);
+  background-size: 600px, 1100px, 950px, 600px, 1300px, 700px, 100% 100%;
+	font-size: 1.5rem;
+}
+
+.container {
+	background: transparent;
+}
+
+/* nav */
+nav {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: $kleur-zwart;
+  border-bottom: $kleur-zwart dashed 3px;
+
+  a {
+    color: $white;
+    font-family: $font-header;
+    font-size: 24px;
+    transition: ease-in-out color .15s;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .container {
+    max-width: 700px;
+  }
+
+  .menu {
+    height: 50px;
+  }
+}
+/* sections */
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* game */
+.game .game-container {
+  display: flex;
+  justify-content: center;
+
+  .unity-container {
+    max-width: 800px;
+    width: 100%;
+  }
+}
