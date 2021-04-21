@@ -77,3 +77,14 @@ nav {
     border:0px;
   }
 }
+
+.instagram .instagram-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .instagram-embed{
+    width: 400px;
+    height: 400px;
+  }
+}
