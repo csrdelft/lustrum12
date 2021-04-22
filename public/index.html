@@ -14,24 +14,42 @@
 </head>
 
 <body>
+    <div id="zandloper" class="zandloper">
+        <img id="zandloper_kapot" class="kapot" src="${require('../src/assets/images/ZandloperKapot.png')}"/>
+        <img id="zandloper_heel" class="heel" src="${require('../src/assets/images/ZandloperHeel.png')}"/>
+    </div>
+
     <a id="home"></a>
     <nav class="site-header">
+        <a class="logo-titel d-inline-block" href="/lustrum12">
+            <img src="${require('../src/assets/images/themaheader.png')}"
+                    alt="Logo menu" />
+        </a>
         <div class="container">
             <div class="menu d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <a class="d-none d-md-inline-block" href="#home">Home</a>
                 <a class="d-none d-md-inline-block" href="#themafilm">Themafilm</a>
                 <a class="d-none d-md-inline-block" href="#game">Game</a>
                 <a class="d-none d-md-inline-block" href="#instagram">Instagram</a>
+                <a class="d-none d-md-inline-block" href="#commissie">Commissie</a>
             </div>
         </div>
     </nav>
 
-    <section class="head">
-    </section>
+    <div class="thema thema-container">
+        <img class="thema-plaetje" src="${require('../src/assets/images/thematitel.png')}" alt="Lustrum Instagram" >
+    </div>
 
-    <section class="video">
-        <a class="anchor" id="themafilm"></a>
-        <h2>Themafilm</h2>
+    <div class="divider">
+        <img class="boven" src="${require('../src/assets/images/DividerBoven.png')}">
+    </div>
+
+    <div class="video">
+        <a class="anchor glow" id="themafilm"></a>
+        <!-- <div class="kopje">
+            <img class="plaetje" src="${require('../src/assets/images/KopjeThemafilm.png')}"/>
+        </div> -->
+        <h2 class="titel">Themafilm</h2>
         <div class="container">
             <div class="video-container">
                 <div class="youtube-container closed">
@@ -39,23 +57,60 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="game">
-        <a class="anchor" id="game"> </a>
-        <h2>Game</h2>
+    <div class="divider">
+        <img class="tussen" src="${require('../src/assets/images/DividerTussen.png')}">
+    </div>
+
+    <div class="game">
+        <a class="anchor glow" id="game"> </a>
+        <!-- <div class="kopje"><img class="plaetje" src="${require('../src/assets/images/KopjeGame.png')}"/></div> -->
+        <h2 class="titel">Game</h2>
         <div class="game-container" id="game-container"></div>
-    </section>
+    </div>
+    
+    <div class="divider">
+        <img class="tussen" src="${require('../src/assets/images/DividerTussen.png')}">
+    </div>
 
-    <section class="instagram">
-        <h2>Instagram</h2>
+
+    <div class="instagram">
         <a class="anchor" id="instagram"></a>
+        <!-- <div class="kopje"><img class="plaetje" src="${require('../src/assets/images/KopjeInstagram.png')}"/></div> -->
+        <h2 class="titel">Instagram</h2>
         <div class="instagram-container">
             <a href="https://www.instagram.com/lustrumcsr/"> 
-                <img class="instagram-embed" src="${require('../src/assets/images/lustrumcsr_nametag.png')}" alt="Lustrum Instagram" >
+                <img class="instagram-embed" src="${require('../src/assets/images/InstagramNametag.png')}" alt="Lustrum Instagram" >
             </a>
+            <a href="https://www.instagram.com/lustrumcsr/">lustrumcsr</a>
         </div>
-    </section>
+    </div>
+    
+    <div class="divider">
+        <img class="tussen" src="${require('../src/assets/images/DividerTussen.png')}">
+    </div>
+
+    <div class="commissie">
+        <a class="anchor" id="commissie"></a>
+        <!-- <div class="kopje"><img class="plaetje" src="${require('../src/assets/images/KopjeCommissie.png')}"/></div> -->
+        <h2 class="titel">Commissie</h2>
+        <div class="commissie-container">
+            <img class="commissiefoto" src="${require('../src/assets/images/CommissieFoto.png')}" alt="Lustrum Instagram" >
+            <h4> LustrumCie Van Stiphout </h4>
+            <a>Am. Van Stiphout (Praeses)</a>
+            <a>Am. De Wilde jr. (Fiscus)</a>
+            <a>Ama. Marting (Acquisitie)</a> 
+            <a>Ama. Blokhuis</a>
+            <a>Am. Haasnoot jr.</a>
+            <a>Am. Kanis</a>
+            <a>Ama. Visscher</a>
+        </div>
+    </div>
+    
+    <div class="divider">
+        <img class="onder" src="${require('../src/assets/images/DividerOnder.png')}">
+    </div>
 </body>
 
 </html>
