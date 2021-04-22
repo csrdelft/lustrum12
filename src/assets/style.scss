@@ -1,12 +1,6 @@
 @import 'vars';
 @import 'bootstrap';
 
-h2 {
-  text-align: center;
-  font-weight: 100;
-  margin-bottom: 35px;
-}
-
 .anchor {
   display: block;
   position: relative;
@@ -26,10 +20,57 @@ body {
   // linear-gradient : (160deg, #903921, #C8611A);
   background-size: 600px, 1100px, 950px, 600px, 1300px, 700px, 100% 100%;
 	font-size: 1.5rem;
+
+  /* Body text */
+  color: $font-color-secondary;
 }
 
 .container {
 	background: transparent;
+}
+
+/* Kopjes */
+.titel{
+  font-weight: 100;
+  text-align: center;
+  color: $font-color-primary;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  // text-shadow: 
+  //   0 0 2px $kleur-wit,
+  //   0 0 11px $kleur-zwart,
+  //   0 0 12px $kleur-zwart;
+}
+
+/* IMG Kopjes */
+.kopje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  .plaetje{
+    width: 400px;
+  }
+}
+
+/* Dividers */
+.divider{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .boven {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .tussen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .onder {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 /* nav */
@@ -38,33 +79,63 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: $kleur-zwart;
-  border-bottom: $kleur-zwart dashed 3px;
+  background: $primary;
+  border-bottom: $primary dashed 3px;
 
   a {
-    color: $white;
+    /* Header text */
+    color: $font-color-primary;
     font-family: $font-header;
+    text-transform: uppercase;
     font-size: 24px;
     transition: ease-in-out color .15s;
 
     &:hover {
+      color: $kleur-wit;
       text-decoration: none;
     }
   }
 
+  .logo-titel {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    @media screen and (max-width:1100px){
+      visibility: hidden;
+    }
+
+    img {
+      width: 200px;   
+    }
+  }
   .container {
     max-width: 700px;
+    
   }
 
   .menu {
     height: 50px;
   }
 }
-/* sections */
-.head {
+
+/* thema display */
+.thema {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+
+  .thema-plaetje {
+    padding-top: 60px;
+    width: 960px;
+    height: 100%;
+    border-bottom: 5px;
+    border-bottom-color: $primary;
+  }
+}
+
+/* video */
+.video {
+  margin-bottom: 30px;
 }
 /* game */
 .game .game-container {
@@ -78,13 +149,59 @@ nav {
   }
 }
 
+/* Commissie */
+.commissie .commissie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $font-color-secondary;
+
+  .commissiefoto {
+    width: 720px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Instagram */
 .instagram .instagram-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  margin-bottom: 20px;
+
+  a {
+    text-decoration: none;
+    color: $font-color-primary;
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
   .instagram-embed{
     width: 400px;
     height: 400px;
   }
 }
+
+/* Vallende Zandloper */
+.zandloper {
+  position: fixed;
+  margin-top: -50px;
+  width: 100px;
+
+  .kapot {
+    position: fixed;
+    width: 100px;
+  }
+  .heel {
+    position: fixed;
+    width: 100px;
+  }
+
+  // only show it when it does not overlap with the other stuff (960 + 105 * 2)
+  @media screen and (max-width:1170px){
+    display: none;
+  }
+}
+
