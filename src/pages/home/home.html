@@ -1,0 +1,70 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Website voor het 12e Lustrum der Civitas Studiosorum Reformatorum.">
+    <meta name="author" content="Job Kanis">
+
+    <title>12e Lustrum ${VUE_APP_JAAR}</title>
+
+    <link rel="icon" href="${BASE_URL}favicon.ico">
+</head>
+
+<body>
+    <div id="zandloper" class="zandloper">
+        
+        <img id="zandloper_kapot" class="kapot" src="${require('../../assets/images/ZandloperKapot.png')}"/>
+        <img id="zandloper_heel" class="heel" src="${require('../../assets/images/ZandloperHeel.png')}"/>
+    </div>
+
+    <a id="home"></a>
+    <nav class="site-header">
+        <a class="logo-titel d-inline-block" href="/lustrum12">
+            <img src="${require('../../assets/images/themaheader.png')}"
+                    alt="Logo menu" />
+        </a>
+        <div class="container">
+            <div class="menu d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <a class="d-none d-md-inline-block" href="#home">Home</a>
+                <a class="d-none d-md-inline-block" href="opening">Lustrum Opening</a>
+                <a class="d-none d-md-inline-block" href="thema">Thema Bekendmaking</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="thema thema-container">
+        <img class="thema-plaetje" src="${require('../../assets/images/thematitel.png')}" alt="Lustrum Instagram" >
+    </div>
+
+    <div class="divider">
+        <img class="boven" src="${require('../../assets/images/DividerBoven.png')}">
+    </div>
+
+
+    <div class="instagram">
+        <a class="anchor" id="instagram"></a>
+        <!-- <div class="kopje"><img class="plaetje" src="${require('../../assets/images/KopjeInstagram.png')}"/></div> -->
+        <h2 class="titel">Instagram</h2>
+        <div class="instagram-container">
+            <a href="https://www.instagram.com/lustrumcsr/"> 
+                <img class="instagram-embed" src="${require('../../assets/images/InstagramNametag.png')}" alt="Lustrum Instagram" >
+            </a>
+            <a href="https://www.instagram.com/lustrumcsr/">lustrumcsr</a>
+        </div>
+    </div>
+    
+    <!-- <div class="divider">
+        <img class="tussen" src="${require('../../assets/images/DividerTussen.png')}">
+    </div> -->
+    
+    <div class="divider">
+        <img class="onder" src="${require('../../assets/images/DividerOnder.png')}">
+    </div>
+</body>
+
+</html>
