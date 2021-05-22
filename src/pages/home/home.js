@@ -1,4 +1,4 @@
-import '../../assets/style.scss'
+import './home.scss'
 
 window.onscroll = function(){
     var scrollMaxY = window.scrollMaxY || (document.documentElement.scrollHeight - document.documentElement.clientHeight)
