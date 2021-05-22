@@ -29,49 +29,7 @@ body {
 	background: transparent;
 }
 
-/* Kopjes */
-.titel{
-  font-weight: 100;
-  text-align: center;
-  color: $font-color-primary;
-  text-transform: uppercase;
-  font-weight: bold;
-
-  // text-shadow: 
-  //   0 0 2px $kleur-wit,
-  //   0 0 11px $kleur-zwart,
-  //   0 0 12px $kleur-zwart;
-}
-
-/* IMG Kopjes */
-.kopje {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  .plaetje{
-    width: 400px;
-  }
-}
-
-/* Dividers */
-.divider{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .boven {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .tussen {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .onder {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-}
+// Shared page functionality
 
 /* nav */
 nav {
@@ -80,7 +38,6 @@ nav {
   width: 100%;
   z-index: 1000;
   background: $primary;
-  border-bottom: $primary dashed 3px;
 
   a {
     /* Header text */
@@ -118,69 +75,28 @@ nav {
   }
 }
 
-/* thema display */
-.thema {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Kopjes */
+.titel{
+  font-weight: 100;
+  text-align: center;
+  color: $font-color-primary;
+  text-transform: uppercase;
+  font-weight: bold;
 
-  .thema-plaetje {
-    padding-top: 60px;
-    width: 960px;
-    height: 100%;
-    border-bottom: 5px;
-    border-bottom-color: $primary;
-  }
+  // text-shadow: 
+  //   0 0 2px $kleur-wit,
+  //   0 0 11px $kleur-zwart,
+  //   0 0 12px $kleur-zwart;
 }
 
-/* video */
-.video {
-  margin-bottom: 30px;
-}
-/* game */
-.game .game-container {
-  display: flex;
-  justify-content: center;
-
-  .unity-container {
-    width: 960px;
-    height: 650px;
-    border:0px;
-  }
-}
-
-/* Commissie */
-.commissie .commissie-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: $font-color-secondary;
-
-  .commissiefoto {
-    width: 720px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-}
-
-/* Instagram */
-.instagram .instagram-container {
+/* IMG Kopjes */
+.kopje {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-
-  a {
-    text-decoration: none;
-    color: $font-color-primary;
-    font-family: $font-header;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  .instagram-embed{
+  .plaetje{
     width: 400px;
-    height: 400px;
   }
 }
 
@@ -205,3 +121,56 @@ nav {
   }
 }
 
+/* Instagram */
+.instagram .instagram-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 20px;
+
+a {
+  text-decoration: none;
+  color: $font-color-primary;
+  font-family: $font-header;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.instagram-embed{
+  width: 400px;
+  height: 400px;
+}
+}
+
+/* thema display */
+.thema {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .thema-plaetje {
+    padding-top: 60px;
+    width: 960px;
+    height: 100%;
+    border-bottom: 5px;
+    border-bottom-color: $primary;
+  }
+}
+/* Dividers */
+.divider{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .boven {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .tussen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .onder {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

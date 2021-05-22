@@ -1,4 +1,4 @@
-import '../../assets/style.scss'
+import './thema.scss'
 
 window.addEventListener('load', function () {
     document.getElementById("game-container").innerHTML =
