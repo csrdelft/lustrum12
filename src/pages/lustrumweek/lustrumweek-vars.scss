@@ -1,0 +1,29 @@
+$lw-blauw: #3B9596;
+$lw-grijs: #275e5f;
+$lw-oranje: #EC673E;
+$lw-donkerrood:   #551D10;      //#67250D;
+$lw-header-donkerrood:  #431413;    //#310c16;
+
+$lw-beige: #F2C292;
+
+$lw-beige-background: #f2c292ec;
+$lw-primary: $lw-blauw;
+$lw-secondary: $lw-oranje;
+
+
+@font-face {
+    font-family: Segoe Script;
+    src: '../../assets/fonts/segoescb.ttf';
+}
+
+@font-face {
+    font-family: 'Mrs Sheppards Regular';
+    font-style: italic;
+    font-weight: normal;
+    src: url('../../assets/fonts/MrsSheppards-Regular.woff') format('woff');
+}
+
+$lw-font-header: Mrs Sheppards Regular, Arial, Helvetica, sans-serif;
+$lw-font-text: Segoe Script, Arial, Helvetica, sans-serif;
+
+

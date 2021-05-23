@@ -1,1 +1,24 @@
-@import '../../assets/style.scss';
+@import'../../assets/style.scss';
+@import'../lustrumweek/lustrumweek-vars.scss';
+
+.lw-font-text {
+    font-family: $lw-font-text;
+    &:hover {
+        color: $lw-blauw;
+    }
+}
+
+.overzicht {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .activiteit {
+        padding-top: 20px;
+        .activiteit-plaetje {
+            width: 720px;
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+}
