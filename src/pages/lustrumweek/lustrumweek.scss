@@ -1,8 +1,6 @@
 @import '../../assets/style.scss';
 @import './lustrumweek-vars.scss';
 
-
-
 body {
     background-image: url('../../assets/images/lw-achtergrond.png');
     background-repeat: no-repeat;
@@ -11,7 +9,6 @@ body {
     background-color: $lw-primary;
     font-family: $lw-font-text;
 }
-
 
 .lw-thema {
     padding-top: 55px;
@@ -47,8 +44,6 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-
 
 nav {
     // background: $lw-donkerrood;
