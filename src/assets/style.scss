@@ -97,6 +97,7 @@ nav {
   margin-bottom: 20px;
   .plaetje{
     width: 400px;
+    max-width: 100%;
   }
 }
 
@@ -123,23 +124,24 @@ nav {
 
 /* Instagram */
 .instagram .instagram-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 
-a {
-  text-decoration: none;
-  color: $font-color-primary;
-  font-family: $font-header;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+  a {
+    text-decoration: none;
+    color: $font-color-primary;
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 
-.instagram-embed{
-  width: 400px;
-  height: 400px;
-}
+  .instagram-embed{
+    width: 400px;
+    height: 100%;
+    max-width: 100%;
+  }
 }
 
 /* thema display */
@@ -152,6 +154,7 @@ a {
     padding-top: 60px;
     width: 960px;
     height: 100%;
+    max-width: 100%;
     border-bottom: 5px;
     border-bottom-color: $primary;
   }
