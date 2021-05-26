@@ -188,3 +188,34 @@ nav {
     margin-bottom: 10px;
   }
 }
+
+// Activiteiten overzicht
+.overzicht {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .activiteit {
+      padding-top: 20px;
+      .activiteit-plaetje {
+          width: 720px;
+          height: 100%;
+          max-width: 100%;
+      }
+  }
+}
+
+// Temperary index variables
+@font-face {
+  font-family: Segoe Script temp;
+  src: '../../assets/fonts/segoescb.ttf';
+}
+$lw-font-text-temp: Segoe Script temp, Arial, Helvetica, sans-serif;
+$lw-blauw-temp: #3B9596;
+.lw-font-text {
+  font-family: $lw-font-text-temp;
+  &:hover {
+      color: $lw-blauw-temp;
+  }
+}
+

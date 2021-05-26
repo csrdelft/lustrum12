@@ -1,10 +1,10 @@
 module.exports = {
-    publicPath: '.',
+    // publicPath: '.',
     pages: {
         index: {
-            entry: 'src/pages/home/home.js',
-            template: 'src/pages/home/home.html',
-            filename: 'home.html'
+            entry: 'src/assets/main.js',
+            template: 'public/index.html',
+            filename: 'index.html'
         },
         opening: {
             entry: 'src/pages/opening/opening.js',
