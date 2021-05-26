@@ -1,5 +1,5 @@
 module.exports = {
-    // publicPath: '.',
+    publicPath: '.', // comment out when developing
     pages: {
         index: {
             entry: 'src/assets/main.js',
