@@ -207,11 +207,12 @@ nav {
 
 // Temperary index variables
 @font-face {
-  font-family: Segoe Script temp;
-  src: '../../assets/fonts/segoescb.ttf';
+  font-family: Segoe Script;
+  src: './fonts/segoescb.ttf';
 }
-$lw-font-text-temp: Segoe Script temp, Arial, Helvetica, sans-serif;
+$lw-font-text-temp: Segoe Script, Arial, Helvetica, sans-serif;
 $lw-blauw-temp: #3B9596;
+
 .lw-font-text {
   font-family: $lw-font-text-temp;
   &:hover {
