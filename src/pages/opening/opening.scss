@@ -1,0 +1,17 @@
+@import '../../assets/style.scss';
+
+body {
+    /* Body text */
+    background-color: $kleur-donkerrood;
+}
+
+.poster{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        max-width: 100%;
+        height: 100vh;
+    }
+}
