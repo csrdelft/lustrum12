@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Website voor het 12e Lustrum der Civitas Studiosorum Reformatorum.">
+    <meta name="author" content="Job Kanis">
+
+    <title>12e Lustrum ${VUE_APP_JAAR}</title>
+
+    <link rel="icon" href="${BASE_URL}favicon.ico">
+</head>
+
+<body>
+    <div id="zandloper" class="zandloper">
+        <img id="zandloper_kapot" class="kapot" src="${require('/src/assets/images/common/ZandloperKapot.png')}"/>
+        <img id="zandloper_heel" class="heel" src="${require('/src/assets/images/common/ZandloperHeel.png')}"/>
+    </div>
+
+	<nav class="site-header">
+		<a class="logo-titel d-inline-block" href="./">
+            <a class="logo-titel d-inline-block" href="../">
+                <img src="${require('/src/assets/images/common/themaheader.png')}" alt="Logo menu" />
+            </a>
+		</a>
+		<div class="container">
+			<div class="menu d-flex flex-column flex-md-row justify-content-between align-items-center">
+				<a class="d-none d-md-inline-block" href="./">Home</a>
+				<a class="d-none d-md-inline-block" href="#top">Top</a>
+				<a class="d-none d-md-inline-block" href="#themafilm">Themafilm</a>
+				<a class="d-none d-md-inline-block" href="#game">Game</a>
+				<a class="d-none d-md-inline-block" href="#instagram">Instagram</a>
+				<a class="d-none d-md-inline-block" href="#commissie">Commissie</a>
+			</div>
+		</div>
+	</nav>
+
+	<a id="top"></a>
+
+    <div class="thema thema-container">
+        <img class="thema-plaetje" src="${require('/src/assets/images/common/thematitel.png')}" alt="Lustrum Thema Titel" >
+    </div>
+
+	<div class="divider"><img class="boven" src="${require('/src/assets/images/common/DividerBoven.png')}"></div>
+
+
+	<div class="video">
+		<h2 class="titel">Themafilm</h2>
+		<div class="container video-container">
+			<div class="youtube-container closed">
+				<div class="embed-responsive ratio ratio-16x9" id="player">
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="divider"><img class="tussen" src="${require('/src/assets/images/common/DividerTussen.png')}">></div>
+
+
+	<div class="game">
+		<a class="anchor glow" id="game"> </a>
+		<h2 class="titel">Game</h2>
+		<div class="game-container" id="game-container">
+		</div>
+	</div>
+
+    <div class="divider"><img class="tussen" src="${require('/src/assets/images/common/DividerTussen.png')}">></div>
+
+
+	<div class="instagram">
+		<a class="anchor" id="instagram"></a>
+		<h2 class="titel">Instagram</h2>
+		<div class="instagram-container">
+			<a href="https://www.instagram.com/lustrumcsr/">
+				<img class="instagram-embed" src="${require('/src/assets/images/common/instagram.png')}"/>
+
+            </a>
+			<a href="https://www.instagram.com/lustrumcsr/">lustrumcsr</a>
+		</div>
+	</div>
+
+    <div class="divider"><img class="tussen" src="${require('/src/assets/images/common/DividerTussen.png')}">></div>
+
+	<div class="commissie">
+		<a class="anchor" id="commissie"></a>
+		<h2 class="titel">Commissie</h2>
+		<div class="commissie-container">
+			<img class="commissiefoto" src="${require('/src/assets/images/pages/thema/commissiefoto.png')}" alt="Lustrum Instagram" >
+			<h4> LustrumCie Van Stiphout </h4>
+			<a>Am. Van Stiphout (Praeses)</a>
+			<a>Am. De Wilde jr. (Fiscus)</a>
+			<a>Ama. Marting (Acquisitie)</a>
+			<a>Ama. Blokhuis</a>
+			<a>Am. Haasnoot jr.</a>
+			<a>Am. Kanis</a>
+			<a>Ama. Visscher</a>
+		</div>
+	</div>
+
+    <div class="divider"><img class="onder" src="${require('/src/assets/images/common/DividerOnder.png')}"></div>
+
+</body>
+
+
+</html>
