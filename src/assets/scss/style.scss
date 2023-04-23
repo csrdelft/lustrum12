@@ -1,49 +1,5 @@
-///////////////////////////////////////////////////////////////////////
-/// Overwrite vars
-
-/* bootstrap override */
-@font-face {
-	font-family: Minion Variable Concept;
-	src: url("/src/assets/fonts/MinionVariableConcept-Roman.otf") format("otf");
-}
-
-$kleur-rood: #6e1321;
-$kleur-donkerrood: #310c16;
-$kleur-goud0: #ebb803;
-$kleur-goud1: #fadd00;
-$kleur-goud2: #f5d500;
-$kleur-goud3: #8f5a14;
-$kleur-wit: #ffffff;
-$kleur-zwart: #000000;
-
-$font-header: Minion Variable Concept, Arial, Helvetica, sans-serif;
-$font-text: Minion Variable Concept, Arial, Helvetica, sans-serif;
-
-$primary: $kleur-donkerrood !default;
-$secondary: $kleur-rood !default;
-$font-color-primary: $kleur-goud0 !default;
-$font-color-secondary: #ffffff !default;
-
-$theme-colors: (
-	"primary": $primary,
-	"secondary": $secondary,
-	"danger": #ff4136,
-	"white": #f6c8b1,
-);
-
-$font-family-sans-serif: $font-text;
-$headings-font-family: $font-header;
-$headings-font-weight: 700;
-$header-color: $font-color-primary;
-$body-bg: $secondary;
-
-$h1-font-size: 4.4rem;
-$h2-font-size: 3.2rem;
-$h3-font-size: 2.5rem;
-$h4-font-size: 2rem;
-
-
-@import '/src/assets//scss/bootstrap.scss';
+@import '/src/assets/scss/vars.scss';
+@import '/src/assets/scss/bootstrap.scss';
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -93,7 +49,6 @@ nav {
 	a {
 		/* Header text */
 		color: $font-color-primary;
-		font-family: $font-header;
 		text-transform: uppercase;
 		text-decoration: none;
 		font-size: 24px;
@@ -190,7 +145,6 @@ nav {
 	a {
 		text-decoration: none;
 		color: $font-color-primary;
-		font-family: $font-header;
 		text-transform: uppercase;
 		font-weight: bold;
 	}
@@ -314,6 +268,7 @@ nav {
 	font-family: Segoe Script;
 	src: url("/src/assets/fonts/segoescb.ttf");
 }
+
 $lw-font-text-temp: Segoe Script, Arial, Helvetica, sans-serif;
 $lw-blauw-temp: #3b9596;
 

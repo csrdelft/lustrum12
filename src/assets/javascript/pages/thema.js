@@ -1,4 +1,4 @@
-import "/src/assets/scss/pages/thema.scss";
+import "/src/assets/scss/thema.scss";
 import "/src/assets/javascript/zandloper";
 
 window.addEventListener('load', function () {
