@@ -17,7 +17,7 @@ jobs:
         run: yarn global add @vue/cli
       
       - name: Install yarn dependencies
-        run: export NODE_OPTIONS=--openssl-legacy-provider && yarn install
+        run: export NODE_OPTIONS=--openssl-legacy-provider && yarn install --ignore-engines
         
       - name: Run build
         run: export NODE_OPTIONS=--openssl-legacy-provider && yarn run build
