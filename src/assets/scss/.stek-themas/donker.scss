@@ -1,0 +1,132 @@
+$white: #0b0d0e;
+$gray-900: #f8f9fa !default;
+$gray-800: #e9ecef !default;
+$gray-700: #dee2e6 !default;
+$gray-600: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-400: #6c757d !default;
+$gray-300: #495057 !default;
+$gray-200: #343a40 !default;
+$gray-100: #22262a !default;
+$black: #fff;
+
+$body-bg: $gray-100 !default;
+$body-color: darken($black, 7%) !default;
+$headings-color: inherit;
+
+$primary: #7dc4fd !default;
+$secondary: #e59200 !default;
+$light: $white !default;
+$dark: $gray-800 !default;
+$yiq-text-dark: $white !default;
+$yiq-text-light: $gray-900 !default;
+
+@if not variable-exists("headings-font-family") {
+	@font-face {
+		font-family: "Ubuntu-Light";
+		src: url("../../fonts/dark-mode/Ubuntu-Light.ttf") format("truetype"),
+			url("../../fonts/dark-mode/Ubuntu-Light.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Ubuntu-Medium";
+		src: url("../../fonts/dark-mode/Ubuntu-Medium.ttf") format("truetype"),
+			url("../../fonts/dark-mode/Ubuntu-Medium.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	$font-family-base: "Ubuntu-Medium", sans-serif !default;
+	$headings-font-family: "Ubuntu-Medium", sans-serif !default;
+}
+
+/** Stek specifieke variabelen. */
+
+/* Modals */
+$modal-content-bg: $body-bg !default;
+
+/* bbcode */
+$bb-block-bg: $gray-200 !default;
+
+/* forum */
+$forum-bericht0-bg: $body-bg !default;
+$forum-bericht1-bg: darken($body-bg, 4%) !default;
+
+/* main menu */
+$menu-primary-hover: $primary !default;
+$menu-bg: $gray-100 !default;
+$menu-color: $body-color !default;
+$menu-small-bg: #0a338d !default;
+$menu-small-color: #ffffff !default;
+
+/* zoeken */
+$zoeken-active-bg: #428bca !default;
+
+/* maalcie-tabel */
+$tabel-header: darken($body-bg, 5%) !default;
+$tabel-regel-donker: lighten($body-bg, 4%) !default;
+$tabel-regel-licht: lighten($body-bg, 12%) !default;
+
+/* cards */
+$card-bg: darken($body-bg, 5%) !default;
+$card-border-color: rgba(0, 0, 0, 0.3) !default;
+
+/* importeer basis */
+@import "../base";
+@import "~flatpickr/dist/themes/dark.css";
+
+:root {
+	color-scheme: dark;
+}
+
+.close {
+	color: $white;
+}
+
+.forum-deel {
+	.alternate-row {
+		&:nth-child(6n + 1),
+		&:nth-child(6n + 2),
+		&:nth-child(6n + 3) {
+			background-color: $secondary;
+		}
+	}
+}
+
+.forumdeel-omschrijving {
+	background-color: #3f4149;
+}
+
+/* Pas achtergrond in de fotogallerij aan */
+.jgallery {
+	background-color: lighten($body-bg, 4%) !important;
+
+	&-thumbnails {
+		background-color: lighten($body-bg, 4%) !important;
+	}
+}
+
+/* Pas achtergrond van, onder andere het courant formulier, aan */
+div#pubciemail_form {
+	background-color: transparent;
+	border: 1px solid #d3d3d3;
+	padding: 10px;
+}
+
+/* Peiling uitslag van de peilingen niet meer wit */
+.peiling .list-group-item {
+	background-color: lighten($body-bg, 4%);
+}
+
+.dataTables_filter {
+	label,
+	input {
+		color: #fff;
+	}
+}
+
+span.curpage {
+	color: white;
+}

@@ -1,0 +1,239 @@
+// Gebruikte lustrum Kleuren
+$lustrum-kleur-donker-rood: #3e0d1c;
+$lustrum-kleur-rood: #6e1321;
+$lustrum-kleur-licht-rood: #8b1437;
+$lustrum-kleur-goud: #f1c802;
+$lustrum-kleur-wit: #dedede;
+
+// backgrounds
+$kleur-primair: $lustrum-kleur-donker-rood;
+$kleur-secundair: $lustrum-kleur-rood;
+
+// Text
+$kleur-textheader: $lustrum-kleur-goud;
+$kleur-text: $lustrum-kleur-goud;
+$kleur-text-hover: $lustrum-kleur-wit;
+
+@font-face {
+	font-family: "Orpheus Pro";
+	font-style: normal;
+	font-weight: normal;
+	src: url("/src/assets/fonts/OrpheusPro-Bold.otf");
+	
+}
+$headings-font: "Orpheus Pro", "Source Sans Pro", Helvetica, Arial, sans-serif;
+$headings-font-family: ($headings-font, uppercase);
+
+$theme-colors: (
+	"primary": $kleur-primair,
+	"danger": $lustrum-kleur-licht-rood,
+	"white": $kleur-text,
+);
+
+// Kleur overwrites
+$white: $kleur-primair;
+$gray-100: #212529;
+$gray-200: #343a40;
+$gray-300: #495057;
+$gray-400: #6c757d;
+$gray-500: #adb5bd;
+$gray-600: #ced4da;
+$gray-700: #dee2e6;
+$gray-800: #e9ecef;
+$gray-900: #f8f9fa;
+$black: #fff;
+$light: $gray-100;
+$dark: $gray-800;
+$yiq-text-dark: $white;
+$yiq-text-light: $gray-900;
+
+$donkerblauw: $kleur-primair;
+$blue: $kleur-primair;
+$lichtblauw: $kleur-text;
+
+// Kleur variable overwrites
+$body-bg: $kleur-secundair;
+$body-color: $kleur-text-hover;
+$headings-color: $kleur-textheader;
+
+$bb-block-bg: $kleur-primair;
+
+$card-bg: $kleur-primair;
+$list-group-bg: $kleur-primair;
+
+$link-color: $kleur-text;
+$link-hover-color: $kleur-text-hover;
+
+$menu-primary-hover: $kleur-textheader;
+$menu-bg: $body-bg;
+$menu-color: $body-color;
+$menu-small-bg: $body-bg;
+$menu-small-color: $body-color;
+
+$zoeken-active-bg: lighten($body-bg, 10%);
+
+$tabel-header: $kleur-primair;
+$tabel-hover: darken($kleur-secundair, 5%);
+$tabel-regel-licht: $kleur-secundair;
+$tabel-regel-donker: lighten($kleur-secundair, 5%);
+
+$footer-background: $kleur-primair;
+$maaltijdketzer-bg: $kleur-primair;
+
+// overige variabelen in dies theme
+$bb-alt-bg: darken($body-bg, 4%);
+$bb-hover-bg: $kleur-text-hover;
+
+$modal-content-bg: $kleur-secundair;
+$list-group-action-color: $kleur-text;
+$list-group-hover-bg: $kleur-textheader;
+$text-muted: #fffbfa;
+
+/* importeer basis */
+// @import "../base";
+
+// Puntjes op de i (maak het onleesbare leesbaar)
+
+// headers
+h1 {
+	font-family: $headings-font-family;
+	color: $kleur-textheader;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	font-family: $headings-font-family;
+	color: $kleur-textheader;
+}
+
+// is-het-al tekst
+.ishetal {
+	color: $kleur-text;
+}
+
+// lustrum stek link
+.lustrum12_button {
+	color: $kleur-text;
+}
+.lustrum12_button:hover {
+	color: $kleur-text-hover;
+}
+
+// overwrite header colors
+#menu {
+	a:active {
+		color: $lustrum-kleur-goud;
+	}
+	.fa-bookmark {
+		color: $lustrum-kleur-wit;
+	}
+	#cd-primary-nav .nav-link {
+		color: $lustrum-kleur-goud;
+	}
+}
+
+// image in footer, make white
+footer {
+	a {
+		color: $body-color;
+	}
+	img {
+		filter: invert(90%);
+	}
+}
+
+// name selection right top
+#menu-personal {
+	color: $kleur-text-hover;
+}
+
+#instellingen .list-group-item:hover {
+	background-color: $kleur-primair;
+	color: $kleur-text;
+}
+
+// knopjes
+.btn-secondary {
+	background-color: darken($kleur-secundair, 4%);
+}
+.btn-secondary.active {
+	background-color: lighten($kleur-secundair, 4%);
+}
+
+// DataTables wrapper
+.dataTables_wrapper {
+	background-color: $lustrum-kleur-wit;
+	color: $kleur-primair;
+	a {
+		color: inherit;
+	}
+	// zou vast efficienter kunnen, maar kreeg het niet werkend.
+	.table {
+		color: inherit;
+		tbody {
+			color: inherit;
+			tr {
+				color: inherit;
+				td {
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+// Forumdeel omschrijving
+.forumdeel-omschrijving {
+	color: $kleur-primair;
+	h2 {
+		color: inherit;
+	}
+	.breadcrumb a {
+		color: inherit;
+	}
+}
+
+// breadcrumbs
+.breadcrumb {
+	background-color: inherit;
+	a {
+		color: $kleur-text;
+	}
+}
+
+// Ketzer progressbar
+.progress-bar {
+	background-color: $kleur-primair;
+	color: $kleur-text;
+}
+
+// Radio input
+.form-check-input[type="radio"] {
+	background-color: $kleur-text;
+}
+.form-check-input[type="radio"]:checked {
+	background-color: darken($kleur-text, 5%);
+}
+
+// profiel list-group selector
+#profiel .list-group {
+	.list-group-item {
+		color: $kleur-text;
+	}
+	.list-group-item:hover {
+		color: $kleur-text-hover;
+	}
+}
+// bb-tags
+.bb-prive {
+	background-color: $kleur-primair;
+	color: $kleur-text-hover;
+}
+// polls
+.peiling .progress-bar {
+	background-color: $kleur-secundair;
+}
