@@ -15,7 +15,10 @@ jobs:
 
       - name: Install vue cli
         run: yarn global add @vue/cli
-        
+      
+      - name: set NODE_OPTIONS
+        run: export NODE_OPTIONS=--openssl-legacy-provider  
+      
       - name: Install yarn dependencies
         run: yarn install
         
